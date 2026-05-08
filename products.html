@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products — Dynalektric</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ══ NAVBAR ══════════════════════════════════════════════ -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <svg class="logo-mark" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="#2563EB"/><path d="M10 26L18 10L22 18L26 14" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="26" cy="14" r="2.5" fill="#EF4444"/></svg>
+      <div class="logo-text"><span class="logo-name">dynalektric</span><span class="logo-tag">Power · Precision · Safety</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a><a href="about.html">About Us</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="innovation.html">Innovation Lab</a><a href="customers.html">Our Customers</a>
+      <a href="calculator.html">Calculator</a><a href="contact.html">Contact Us</a>
+    </div>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-secondary" style="padding:10px 20px;font-size:.875rem;">Discuss Project</a>
+      <a href="contact.html" class="btn btn-primary" style="padding:10px 20px;font-size:.875rem;">Request Quote <svg viewBox="0 0 20 20" fill="currentColor" style="width:16px;height:16px;"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg></a>
+    </div>
+    <button class="nav-toggle"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-nav">
+  <div class="mobile-nav-close">✕</div>
+  <a href="index.html">Home</a><a href="about.html">About Us</a><a href="products.html" class="active">Products</a>
+  <a href="innovation.html">Innovation Lab</a><a href="customers.html">Our Customers</a>
+  <a href="calculator.html">Calculator</a><a href="contact.html">Contact Us</a>
+  <a href="contact.html" class="btn btn-primary mt-4" style="justify-content:center;">Request Quote →</a>
+</div>
+
+<!-- ══ HERO ════════════════════════════════════════════════ -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-inner">
+      <div class="page-hero-content animate">
+        <div class="label">Our Products</div>
+        <h1 class="display-2">Engineered Solutions<span>for Every Need</span></h1>
+        <p>From distribution transformers to high-capacity power systems — every product is precision-built and rigorously tested for industrial reliability and long-term performance.</p>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-primary btn-lg">Request Quote →</a>
+          <a href="contact.html" class="btn btn-secondary btn-lg">Discuss Project →</a>
+        </div>
+      </div>
+      <div class="page-hero-img animate animate-delay-2">
+        <svg viewBox="0 0 560 440" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;">
+          <rect fill="#0d1b3e" width="560" height="440"/>
+          <g opacity=".5">
+            <rect x="50" y="60" width="200" height="320" fill="#1e293b" rx="8"/>
+            <rect x="310" y="80" width="200" height="280" fill="#1e293b" rx="8"/>
+            <rect x="70" y="80" width="160" height="45" fill="#263352" rx="4"/>
+            <rect x="70" y="140" width="160" height="45" fill="#263352" rx="4"/>
+            <rect x="70" y="200" width="160" height="45" fill="#263352" rx="4"/>
+            <rect x="70" y="285" width="160" height="75" fill="#1e3a6e" rx="4"/>
+            <rect x="330" y="100" width="160" height="45" fill="#263352" rx="4"/>
+            <rect x="330" y="160" width="160" height="45" fill="#263352" rx="4"/>
+            <rect x="330" y="255" width="160" height="75" fill="#1e3a6e" rx="4"/>
+            <line x1="150" y1="60" x2="150" y2="20" stroke="#475569" stroke-width="3"/>
+            <circle cx="150" cy="16" r="10" fill="#2563EB" opacity=".8"/>
+            <line x1="410" y1="80" x2="410" y2="40" stroke="#475569" stroke-width="3"/>
+            <circle cx="410" cy="36" r="10" fill="#2563EB" opacity=".8"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PRODUCT LISTING ══════════════════════════════════════ -->
+<section class="section" style="background:var(--white);">
+  <div class="container">
+    <div class="section-header animate">
+      <div class="label">Product Categories</div>
+      <h2 class="h1">Complete Power Solutions Portfolio</h2>
+      <p class="body-md">Browse our comprehensive range of industrial electrical equipment.</p>
+    </div>
+
+    <!-- Filter -->
+    <div class="products-filter animate animate-delay-1">
+      <button class="filter-btn active" data-filter="all">All Products</button>
+      <button class="filter-btn" data-filter="transformer">Transformers</button>
+      <button class="filter-btn" data-filter="reactor">Reactors &amp; Chokes</button>
+      <button class="filter-btn" data-filter="panel">Control Panels</button>
+      <button class="filter-btn" data-filter="specialty">Specialty</button>
+    </div>
+
+    <!-- Power Transformers -->
+    <div class="product-full-card filterable animate" data-category="transformer">
+      <div class="product-full-img">
+        <svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;">
+          <rect fill="#0d1b3e" width="480" height="360"/>
+          <g opacity=".5">
+            <rect x="140" y="60" width="200" height="240" fill="#1e293b" rx="6"/>
+            <rect x="160" y="80" width="160" height="50" fill="#263352" rx="4"/>
+            <rect x="160" y="145" width="160" height="50" fill="#263352" rx="4"/>
+            <rect x="160" y="215" width="160" height="65" fill="#1e3a6e" rx="4"/>
+            <line x1="190" y1="60" x2="190" y2="25" stroke="#475569" stroke-width="3"/>
+            <line x1="240" y1="60" x2="240" y2="25" stroke="#475569" stroke-width="3"/>
+            <line x1="290" y1="60" x2="290" y2="25" stroke="#475569" stroke-width="3"/>
+            <circle cx="190" cy="20" r="10" fill="#1e3a6e" stroke="#475569" stroke-width="1.5"/>
+            <circle cx="240" cy="20" r="10" fill="#1e3a6e" stroke="#475569" stroke-width="1.5"/>
+            <circle cx="290" cy="20" r="10" fill="#1e3a6e" stroke="#475569" stroke-width="1.5"/>
+            <line x1="100" y1="120" x2="140" y2="120" stroke="#2563EB" stroke-width="2"/>
+            <line x1="340" y1="120" x2="380" y2="120" stroke="#2563EB" stroke-width="2"/>
+          </g>
+        </svg>
+        <span>⚡</span>
+      </div>
+      <div class="product-full-body">
+        <div class="label mb-4">Transformers</div>
+        <h3>Power Transformers</h3>
+        <p class="body-md">High-performance, reliable transformers built for efficient power distribution across critical infrastructure. Designed for maximum uptime and minimal maintenance.</p>
+        <ul class="spec-list">
+          <li>Range: 25 kVA to 50 MVA</li>
+          <li>Voltage: Up to 132 kV</li>
+          <li>Cooling: ONAN / ONAF / OFAF</li>
+          <li>Standards: IEC 60076, IS 2026</li>
+          <li>Custom configurations available</li>
+        </ul>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-primary">Request Quote →</a>
+          <a href="contact.html" class="btn btn-secondary">Download Datasheet</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Distribution Transformers -->
+    <div class="product-full-card reverse filterable animate" data-category="transformer">
+      <div class="product-full-img">
+        <svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;">
+          <rect fill="#0d1b3e" width="480" height="360"/>
+          <g opacity=".5">
+            <rect x="100" y="80" width="280" height="200" fill="#1e293b" rx="6"/>
+            <rect x="120" y="100" width="240" height="40" fill="#263352" rx="3"/>
+            <rect x="120" y="155" width="240" height="40" fill="#263352" rx="3"/>
+            <rect x="120" y="215" width="240" height="45" fill="#1e3a6e" rx="3"/>
+            <rect x="180" y="60" width="120" height="25" fill="#334155" rx="3"/>
+            <rect x="180" y="278" width="120" height="25" fill="#334155" rx="3"/>
+          </g>
+        </svg>
+        <span>🔌</span>
+      </div>
+      <div class="product-full-body">
+        <div class="label mb-4">Transformers</div>
+        <h3>Distribution Transformers</h3>
+        <p class="body-md">Compact, efficient distribution transformers optimized for urban and rural power networks. Built for 24/7 continuous operation under all load conditions.</p>
+        <ul class="spec-list">
+          <li>Range: 16 kVA to 2500 kVA</li>
+          <li>Voltage: Up to 33 kV</li>
+          <li>Pole mounted &amp; pad mounted variants</li>
+          <li>Loss-optimized amorphous core option</li>
+          <li>IP54 / IP65 enclosure available</li>
+        </ul>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-primary">Request Quote →</a>
+          <a href="contact.html" class="btn btn-secondary">Download Datasheet</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reactors & Chokes -->
+    <div class="product-full-card filterable animate" data-category="reactor">
+      <div class="product-full-img">
+        <svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;">
+          <rect fill="#0d1b3e" width="480" height="360"/>
+          <g opacity=".5">
+            <circle cx="180" cy="180" r="80" fill="none" stroke="#b45309" stroke-width="12"/>
+            <circle cx="300" cy="180" r="80" fill="none" stroke="#b45309" stroke-width="12"/>
+            <circle cx="180" cy="180" r="35" fill="#1e3a6e"/>
+            <circle cx="300" cy="180" r="35" fill="#1e3a6e"/>
+            <line x1="180" y1="100" x2="180" y2="60" stroke="#92400e" stroke-width="4"/>
+            <line x1="300" y1="100" x2="300" y2="60" stroke="#92400e" stroke-width="4"/>
+            <line x1="180" y1="260" x2="180" y2="300" stroke="#92400e" stroke-width="4"/>
+            <line x1="300" y1="260" x2="300" y2="300" stroke="#92400e" stroke-width="4"/>
+            <circle cx="180" cy="55" r="12" fill="#263352" stroke="#475569" stroke-width="2"/>
+            <circle cx="300" cy="55" r="12" fill="#263352" stroke="#475569" stroke-width="2"/>
+          </g>
+        </svg>
+        <span>🔄</span>
+      </div>
+      <div class="product-full-body">
+        <div class="label mb-4">Reactors &amp; Chokes</div>
+        <h3>Line Reactors &amp; Chokes</h3>
+        <p class="body-md">Precision-engineered reactors for harmonic filtering and power quality improvement. Essential for VFD applications and industrial drive systems.</p>
+        <ul class="spec-list">
+          <li>AC line reactors: 3% to 5% impedance</li>
+          <li>DC link chokes for drives</li>
+          <li>Harmonic filter reactors</li>
+          <li>Current range: 5A to 4000A</li>
+          <li>Dry type &amp; oil-cooled variants</li>
+        </ul>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-primary">Request Quote →</a>
+          <a href="contact.html" class="btn btn-secondary">Download Datasheet</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Control Panels -->
+    <div class="product-full-card reverse filterable animate" data-category="panel">
+      <div class="product-full-img">
+        <svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;">
+          <rect fill="#0d1b3e" width="480" height="360"/>
+          <g opacity=".5">
+            <rect x="100" y="40" width="280" height="280" fill="#1e293b" rx="8"/>
+            <rect x="120" y="60" width="240" height="30" fill="#263352" rx="3"/>
+            <rect x="120" y="105" width="100" height="100" fill="#1e3a6e" rx="4"/>
+            <rect x="240" y="105" width="100" height="45" fill="#263352" rx="3"/>
+            <rect x="240" y="160" width="100" height="45" fill="#263352" rx="3"/>
+            <circle cx="265" cy="230" r="15" fill="#22c55e" opacity=".7"/>
+            <circle cx="305" cy="230" r="15" fill="#ef4444" opacity=".7"/>
+            <circle cx="345" cy="230" r="15" fill="#f59e0b" opacity=".7"/>
+            <rect x="120" y="215" width="100" height="80" fill="#263352" rx="3"/>
+            <rect x="120" y="295" width="240" height="10" fill="#334155" rx="2"/>
+          </g>
+        </svg>
+        <span>🎛️</span>
+      </div>
+      <div class="product-full-body">
+        <div class="label mb-4">Control Panels</div>
+        <h3>Motor Control Centers &amp; Panels</h3>
+        <p class="body-md">Intelligent control panels for protection, automation, and operational efficiency across industrial facilities. Fully customizable to your process requirements.</p>
+        <ul class="spec-list">
+          <li>MCC panels up to 6600V</li>
+          <li>PLC-integrated SCADA solutions</li>
+          <li>Automatic Power Factor Correction</li>
+          <li>Bus duct &amp; metering panels</li>
+          <li>IP31 to IP65 enclosure grades</li>
+        </ul>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-primary">Request Quote →</a>
+          <a href="contact.html" class="btn btn-secondary">Download Datasheet</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Furnace Transformers -->
+    <div class="product-full-card filterable animate" data-category="specialty">
+      <div class="product-full-img">
+        <svg viewBox="0 0 480 360" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;">
+          <rect fill="#0d1b3e" width="480" height="360"/>
+          <g opacity=".5">
+            <rect x="100" y="80" width="280" height="220" fill="#1e293b" rx="8"/>
+            <rect x="120" y="100" width="240" height="160" fill="#431407" rx="6"/>
+            <ellipse cx="240" cy="180" rx="60" ry="60" fill="#7c2d12" opacity=".8"/>
+            <ellipse cx="240" cy="180" rx="30" ry="30" fill="#dc2626" opacity=".6"/>
+            <ellipse cx="240" cy="180" rx="12" ry="12" fill="#fbbf24" opacity=".8"/>
+            <line x1="160" y1="80" x2="160" y2="40" stroke="#475569" stroke-width="3"/>
+            <line x1="240" y1="80" x2="240" y2="40" stroke="#475569" stroke-width="3"/>
+            <line x1="320" y1="80" x2="320" y2="40" stroke="#475569" stroke-width="3"/>
+          </g>
+        </svg>
+        <span>🔥</span>
+      </div>
+      <div class="product-full-body">
+        <div class="label mb-4">Specialty</div>
+        <h3>Furnace Transformers</h3>
+        <p class="body-md">Specially designed transformers for arc furnace and induction furnace applications. Built to withstand extreme duty cycles and thermal stress in steel and metal industries.</p>
+        <ul class="spec-list">
+          <li>Arc furnace: Up to 150 MVA</li>
+          <li>Induction furnace: 200 kVA to 10 MVA</li>
+          <li>On-load tap changer standard</li>
+          <li>High short-circuit withstand</li>
+          <li>Forced oil / forced air cooling</li>
+        </ul>
+        <div style="display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-primary">Request Quote →</a>
+          <a href="contact.html" class="btn btn-secondary">Download Datasheet</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SMALL SPECS CARDS ════════════════════════════════════ -->
+<section class="section" style="background:var(--gray-50);">
+  <div class="container">
+    <div class="section-header center animate">
+      <div class="label">Why Choose Dynalektric</div>
+      <h2 class="h1">Built for Performance. Backed by Excellence.</h2>
+    </div>
+    <div class="grid-4">
+      <div class="card animate animate-delay-1">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <h4>ISO Certified</h4>
+        <p class="body-md mt-4" style="font-size:.875rem;">ISO 9001, 14001 &amp; 45001 certified manufacturing processes.</p>
+      </div>
+      <div class="card animate animate-delay-2">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg></div>
+        <h4>Custom Engineering</h4>
+        <p class="body-md mt-4" style="font-size:.875rem;">Every unit engineered to your exact specifications and application.</p>
+      </div>
+      <div class="card animate animate-delay-3">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <h4>Fast Delivery</h4>
+        <p class="body-md mt-4" style="font-size:.875rem;">Expedited manufacturing and logistics for critical project timelines.</p>
+      </div>
+      <div class="card animate animate-delay-4">
+        <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/></svg></div>
+        <h4>After-Sales Support</h4>
+        <p class="body-md mt-4" style="font-size:.875rem;">Dedicated support team for installation, commissioning and maintenance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA BANNER ═══════════════════════════════════════════ -->
+<section class="section-sm" style="background:var(--white);">
+  <div class="container animate">
+    <div class="cta-banner">
+      <div class="cta-banner-content">
+        <h2>Have a Custom Requirement?</h2>
+        <p>Our engineers are ready to design your bespoke power solution.</p>
+      </div>
+      <div class="cta-banner-actions">
+        <a href="contact.html" class="btn btn-white btn-lg">Discuss Your Project →</a>
+        <a href="contact.html" class="btn btn-outline-white btn-lg">Request Quote →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ═══════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><svg class="logo-mark" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="8" fill="#2563EB"/><path d="M10 26L18 10L22 18L26 14" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="26" cy="14" r="2.5" fill="#EF4444"/></svg><div class="logo-text"><span class="logo-name">dynalektric</span><span class="logo-tag">Power · Precision · Safety</span></div></a>
+        <p>Delivering precision engineering and industrial reliability since 1994. Global leader in power transformation technology.</p>
+      </div>
+      <div class="footer-col"><h4>Solutions</h4><a href="products.html">Dry Type Transformers</a><a href="products.html">Distribution Transformers</a><a href="products.html">Chokes and Reactors</a><a href="products.html">Power Transformer</a><a href="products.html">Furnace Transformer</a><a href="products.html">Cubicle Panels</a></div>
+      <div class="footer-col"><h4>Company</h4><a href="about.html">About Us</a><a href="customers.html">Our Customers</a><a href="innovation.html">Innovation Lab</a><a href="contact.html">Careers</a><a href="contact.html">Contact Us</a></div>
+      <div class="footer-col"><h4>Products</h4><a href="products.html">Power Transformers</a><a href="products.html">Reactors & Chokes</a><a href="products.html">Control Panels</a></div>
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>1280 Industrial Park Way, Precision District, TX 75001</span></div>
+        <div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><span>info@dynalektric.com</span></div>
+        <div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.04 4.18 2 2 0 012 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.08 6.08l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><span>+1 (555) 123-4567</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Dynalektric. All rights reserved. Precision Engineering &amp; Industrial Reliability.</span>
+      <div style="display:flex;gap:20px;"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+    </div>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

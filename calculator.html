@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator — Dynalektric</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ══ NAVBAR — identical to index.html ════════════════════ -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">
+      <svg class="logo-mark" viewBox="0 0 36 36" fill="none">
+        <rect width="36" height="36" rx="8" fill="#2563EB"/>
+        <path d="M10 26L18 10L22 18L26 14" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="26" cy="14" r="2.5" fill="#EF4444"/>
+      </svg>
+      <div class="logo-text">
+        <span class="logo-name">dynalektric</span>
+        <span class="logo-tag">Power · Precision · Safety</span>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="products.html">Products</a>
+      <a href="innovation.html">Innovation Lab</a>
+      <a href="customers.html">Our Customers</a>
+      <a href="calculator.html" class="active">Calculator</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-secondary" style="padding:10px 20px;font-size:.875rem;">Discuss Project</a>
+      <a href="contact.html" class="btn btn-primary" style="padding:10px 20px;font-size:.875rem;">
+        Request Quote
+        <svg viewBox="0 0 20 20" fill="currentColor" style="width:16px;height:16px;"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+      </a>
+    </div>
+    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="mobile-nav">
+  <div class="mobile-nav-close">✕</div>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="products.html">Products</a>
+  <a href="innovation.html">Innovation Lab</a>
+  <a href="customers.html">Our Customers</a>
+  <a href="calculator.html" class="active">Calculator</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="contact.html" class="btn btn-primary mt-4" style="justify-content:center;">Request Quote →</a>
+</div>
+
+<!-- ══ HERO ════════════════════════════════════════════════ -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-inner">
+      <div class="page-hero-content animate">
+        <div class="label">Engineering Calculator</div>
+        <h1 class="display-2">Precision Calculations.<span>Smarter Engineering.</span></h1>
+        <p>Use our advanced engineering calculators to determine transformer ratings, load capacity, efficiency, and more with industry-standard accuracy.</p>
+        <div class="hero-badges" style="margin-top:28px;">
+          <span class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;color:var(--blue);"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Industry Standard Accuracy
+          </span>
+          <span class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;color:var(--blue);"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Instant Results
+          </span>
+          <span class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;color:var(--blue);"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M9 7h6M9 11h6M9 15h4"/></svg>
+            Export &amp; Download Reports
+          </span>
+          <span class="hero-badge">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;color:var(--blue);"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Secure &amp; Reliable Data
+          </span>
+        </div>
+      </div>
+      <div class="page-hero-img animate animate-delay-2">
+        <svg viewBox="0 0 560 440" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;">
+          <rect fill="#0d1b3e" width="560" height="440"/>
+          <g opacity=".15" stroke="#2563EB" stroke-width="0.5" fill="none">
+            <line x1="0" y1="55" x2="560" y2="55"/><line x1="0" y1="110" x2="560" y2="110"/>
+            <line x1="0" y1="165" x2="560" y2="165"/><line x1="0" y1="220" x2="560" y2="220"/>
+            <line x1="0" y1="275" x2="560" y2="275"/><line x1="0" y1="330" x2="560" y2="330"/>
+            <line x1="0" y1="385" x2="560" y2="385"/>
+            <line x1="70" y1="0" x2="70" y2="440"/><line x1="140" y1="0" x2="140" y2="440"/>
+            <line x1="210" y1="0" x2="210" y2="440"/><line x1="280" y1="0" x2="280" y2="440"/>
+            <line x1="350" y1="0" x2="350" y2="440"/><line x1="420" y1="0" x2="420" y2="440"/>
+            <line x1="490" y1="0" x2="490" y2="440"/>
+          </g>
+          <g opacity=".5">
+            <rect x="100" y="80" width="160" height="280" fill="#1e293b" rx="6"/>
+            <rect x="120" y="100" width="120" height="45" fill="#263352" rx="4"/>
+            <rect x="120" y="160" width="120" height="45" fill="#263352" rx="4"/>
+            <rect x="120" y="220" width="120" height="45" fill="#263352" rx="4"/>
+            <rect x="120" y="290" width="120" height="50" fill="#1e3a6e" rx="4"/>
+            <rect x="300" y="100" width="160" height="240" fill="#1e293b" rx="6"/>
+            <rect x="320" y="120" width="120" height="45" fill="#263352" rx="4"/>
+            <rect x="320" y="180" width="120" height="45" fill="#263352" rx="4"/>
+            <rect x="320" y="270" width="120" height="50" fill="#2563EB" rx="4" opacity=".4"/>
+            <line x1="100" y1="150" x2="60" y2="120" stroke="#475569" stroke-width="2"/>
+            <circle cx="57" cy="118" r="6" fill="#2563EB" opacity=".7"/>
+            <line x1="460" y1="150" x2="500" y2="120" stroke="#475569" stroke-width="2"/>
+            <circle cx="503" cy="118" r="6" fill="#2563EB" opacity=".7"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CALCULATORS ═══════════════════════════════════════════ -->
+<section class="section" style="background:var(--gray-50);">
+  <div class="container">
+    <div class="grid-2" style="align-items:start;gap:28px;">
+
+      <!-- Single Phase -->
+      <div class="calc-card animate animate-delay-1">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:24px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          <h3 class="h3" style="color:var(--blue);">Single Phase Transformer Capacity Calculator</h3>
+        </div>
+        <div class="calc-form-group">
+          <label class="calc-label" for="s1-amps">Load Amps *</label>
+          <input id="s1-amps" class="calc-input" type="number" value="5" min="0" step="0.1"/>
+        </div>
+        <div class="calc-form-group">
+          <label class="calc-label" for="s1-voltage">Load Voltage *</label>
+          <select id="s1-voltage" class="calc-select">
+            <option value="">Select Voltage</option>
+            <option value="120">120V</option>
+            <option value="230">230V</option>
+            <option value="240">240V</option>
+            <option value="415">415V</option>
+            <option value="440">440V</option>
+          </select>
+        </div>
+        <div class="calc-form-group">
+          <label class="calc-label">Single Transformer Capacity in KVA *</label>
+          <div style="font-size:2rem;font-weight:800;color:var(--blue);padding:10px 0;" id="s1-kva">0</div>
+        </div>
+        <div class="calc-form-group">
+          <label class="calc-label">Capable of running an HP Motor</label>
+          <div style="font-size:.8rem;color:var(--gray-500);margin-bottom:6px;">(assumption: at Power factor 0.8, efficiency 1)</div>
+          <div style="font-size:2rem;font-weight:800;color:var(--blue);" id="s1-hp">0</div>
+        </div>
+        <button onclick="calcSinglePhase()" class="btn btn-primary" style="width:100%;justify-content:center;gap:10px;">
+          Calculate
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h8M8 14h5"/></svg>
+        </button>
+      </div>
+
+      <!-- Three Phase -->
+      <div class="calc-card animate animate-delay-2">
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:24px;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          <h3 class="h3" style="color:var(--blue);">3 Phase Transformer Capacity Calculator</h3>
+        </div>
+        <div class="calc-form-group">
+          <label class="calc-label" for="t3-amps">Load Amps *</label>
+          <input id="t3-amps" class="calc-input" type="number" value="5" min="0" step="0.1"/>
+        </div>
+        <div class="calc-form-group">
+          <label class="calc-label" for="t3-voltage">Load Voltage *</label>
+          <select id="t3-voltage" class="calc-select">
+            <option value="">Select Voltage</option>
+            <option value="415">415V</option>
+            <option value="433">433V</option>
+            <option value="440">440V</option>
+            <option value="3300">3.3 kV</option>
+            <option value="6600">6.6 kV</option>
+            <option value="11000">11 kV</option>
+            <option value="33000">33 kV</option>
+          </select>
+        </div>
+        <div class="calc-form-group">
+          <label class="calc-label">3 Phase Transformer Capacity in KVA *</label>
+          <div style="font-size:2rem;font-weight:800;color:var(--blue);padding:10px 0;" id="t3-kva">0</div>
+        </div>
+        <div class="calc-form-group">
+          <label class="calc-label">Capable of running an HP Motor</label>
+          <div style="font-size:.8rem;color:var(--gray-500);margin-bottom:6px;">(assumption: at Power factor 0.8, efficiency 1)</div>
+          <div style="font-size:2rem;font-weight:800;color:var(--blue);" id="t3-hp">0</div>
+        </div>
+        <button onclick="calcThreePhase()" class="btn btn-primary" style="width:100%;justify-content:center;gap:10px;">
+          Calculate
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px;"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h8M8 14h5"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- How It Works -->
+    <div class="section-header center animate" style="margin-top:72px;">
+      <h2 class="h1">How It Works</h2>
+    </div>
+    <div class="grid-3 animate animate-delay-1" style="text-align:center;gap:0;position:relative;">
+      <div style="padding:0 32px;">
+        <div style="width:64px;height:64px;border-radius:50%;background:var(--blue);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:800;margin:0 auto 20px;">01</div>
+        <div style="font-size:2rem;margin-bottom:12px;">🖩</div>
+        <h4>Select Calculator</h4>
+        <p class="body-md mt-4" style="font-size:.875rem;">Choose the calculator you need from our engineering tools.</p>
+      </div>
+      <div style="padding:0 32px;">
+        <div style="width:64px;height:64px;border-radius:50%;background:var(--blue);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:800;margin:0 auto 20px;">02</div>
+        <div style="font-size:2rem;margin-bottom:12px;">⚙️</div>
+        <h4>Enter Parameters</h4>
+        <p class="body-md mt-4" style="font-size:.875rem;">Input the required values based on your system specifications.</p>
+      </div>
+      <div style="padding:0 32px;">
+        <div style="width:64px;height:64px;border-radius:50%;background:var(--blue);color:var(--white);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:800;margin:0 auto 20px;">03</div>
+        <div style="font-size:2rem;margin-bottom:12px;">📊</div>
+        <h4>Get Instant Results</h4>
+        <p class="body-md mt-4" style="font-size:.875rem;">View accurate results instantly with detailed calculations.</p>
+      </div>
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="animate mt-12" style="background:var(--blue-50);border:1px solid var(--blue-100);border-radius:var(--r-md);padding:18px 24px;display:flex;align-items:flex-start;gap:14px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--blue)" stroke-width="2" style="flex-shrink:0;margin-top:2px;"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+      <p style="font-size:.9rem;color:var(--blue);line-height:1.6;"><strong>Disclaimer:</strong> The results generated by this calculator are for reference only. Please consult our engineers for project-critical calculations and final validation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══ QUOTE FORM ════════════════════════════════════════════ -->
+<section class="section" style="background:var(--white);">
+  <div class="container">
+    <div class="grid-2" style="align-items:start;gap:60px;">
+      <div class="animate">
+        <div class="label mb-4">Enquiry</div>
+        <h2 class="h1 mb-6">Request For<br>A Free Quote</h2>
+        <p class="body-md mb-8">Fill in your requirements and our engineering team will get back to you with the best transformer solution tailored to your needs.</p>
+        <div class="about-img-wrap" style="height:220px;">
+          <svg viewBox="0 0 500 220" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;">
+            <rect fill="#0d1b3e" width="500" height="220"/>
+            <g opacity=".4">
+              <rect x="60" y="30" width="140" height="160" fill="#1e293b" rx="4"/>
+              <rect x="300" y="50" width="140" height="130" fill="#1e293b" rx="4"/>
+              <rect x="80" y="50" width="100" height="30" fill="#263352" rx="3"/>
+              <rect x="80" y="90" width="100" height="30" fill="#263352" rx="3"/>
+              <rect x="80" y="140" width="100" height="30" fill="#1e3a6e" rx="3"/>
+              <rect x="320" y="70" width="100" height="30" fill="#263352" rx="3"/>
+              <rect x="320" y="120" width="100" height="30" fill="#1e3a6e" rx="3"/>
+              <line x1="200" y1="90" x2="300" y2="90" stroke="#2563EB" stroke-width="1.5"/>
+              <circle cx="200" cy="90" r="4" fill="#2563EB"/>
+              <circle cx="300" cy="90" r="4" fill="#2563EB"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="form-card animate animate-delay-1">
+        <h3 class="mb-6">Send Your Requirements</h3>
+        <form id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Full Name *</label>
+              <input class="form-input" type="text" placeholder="Enter your full name" required/>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Company Name *</label>
+              <input class="form-input" type="text" placeholder="Enter company name" required/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Phone Number *</label>
+              <input class="form-input" type="tel" placeholder="Enter phone number" required/>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address *</label>
+              <input class="form-input" type="email" placeholder="Enter email address" required/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Transformer Type *</label>
+              <select class="form-select" required>
+                <option value="">Select transformer type</option>
+                <option>Power Transformer</option>
+                <option>Distribution Transformer</option>
+                <option>Dry Type Transformer</option>
+                <option>Furnace Transformer</option>
+                <option>Reactor / Choke</option>
+                <option>Control Panel</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Type Of Winding *</label>
+              <select class="form-select" required>
+                <option value="">Select type of winding</option>
+                <option>Copper Winding</option>
+                <option>Aluminium Winding</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Primary Voltage *</label>
+              <select class="form-select" required>
+                <option value="">Select primary voltage</option>
+                <option>415V</option><option>11 kV</option><option>33 kV</option><option>66 kV</option><option>132 kV</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Secondary Voltage *</label>
+              <select class="form-select" required>
+                <option value="">Select secondary voltage</option>
+                <option>415V</option><option>433V</option><option>11 kV</option><option>33 kV</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Rating *</label>
+            <select class="form-select" required>
+              <option value="">Select rating (kVA)</option>
+              <option>100 kVA</option><option>250 kVA</option><option>500 kVA</option>
+              <option>1000 kVA</option><option>2500 kVA</option><option>5000 kVA</option>
+              <option>10 MVA</option><option>Custom</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Description</label>
+            <textarea class="form-textarea" placeholder="Enter your requirements or any additional information..." rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:15px;font-size:1rem;">
+            Submit
+            <svg viewBox="0 0 20 20" fill="currentColor" style="width:18px;height:18px;"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA BANNER ═══════════════════════════════════════════ -->
+<section class="section-sm" style="background:var(--gray-50);">
+  <div class="container animate">
+    <div class="cta-banner">
+      <div class="cta-banner-content">
+        <h2>Need Expert Assistance?</h2>
+        <p>Our engineering team is here to help you with custom calculations and technical support.</p>
+      </div>
+      <div class="cta-banner-actions">
+        <a href="contact.html" class="btn btn-white btn-lg">Talk to an Expert →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER — identical to index.html ════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <svg class="logo-mark" viewBox="0 0 36 36" fill="none">
+            <rect width="36" height="36" rx="8" fill="#2563EB"/>
+            <path d="M10 26L18 10L22 18L26 14" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="26" cy="14" r="2.5" fill="#EF4444"/>
+          </svg>
+          <div class="logo-text">
+            <span class="logo-name">dynalektric</span>
+            <span class="logo-tag">Power · Precision · Safety</span>
+          </div>
+        </a>
+        <p>Delivering precision engineering and industrial reliability since 1994. Global leader in power transformation technology.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Solutions</h4>
+        <a href="products.html">Dry Type Transformers</a>
+        <a href="products.html">Distribution Transformers</a>
+        <a href="products.html">Chokes and Reactors</a>
+        <a href="products.html">Power Transformer</a>
+        <a href="products.html">Furnace Transformer</a>
+        <a href="products.html">Cubicle Panels</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="customers.html">Our Customers</a>
+        <a href="innovation.html">Innovation Lab</a>
+        <a href="contact.html">Careers</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <a href="products.html">Power Transformers</a>
+        <a href="products.html">Reactors &amp; Chokes</a>
+        <a href="products.html">Control Panels</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>1280 Industrial Park Way, Precision District, TX 75001</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>info@dynalektric.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81 19.79 19.79 0 01.04 4.18 2 2 0 012 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.08 6.08l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <span>+1 (555) 123-4567</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Dynalektric. All rights reserved. Precision Engineering &amp; Industrial Reliability.</span>
+      <div style="display:flex;gap:20px;">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  function calcSinglePhase() {
+    const amps = parseFloat(document.getElementById('s1-amps').value) || 0;
+    const voltage = parseFloat(document.getElementById('s1-voltage').value) || 0;
+    const kva = (amps * voltage) / 1000;
+    const hp = kva * 0.8 * 1.341;
+    document.getElementById('s1-kva').textContent = kva.toFixed(2);
+    document.getElementById('s1-hp').textContent = hp.toFixed(2);
+  }
+  function calcThreePhase() {
+    const amps = parseFloat(document.getElementById('t3-amps').value) || 0;
+    const voltage = parseFloat(document.getElementById('t3-voltage').value) || 0;
+    const kva = (Math.sqrt(3) * amps * voltage) / 1000;
+    const hp = kva * 0.8 * 1.341;
+    document.getElementById('t3-kva').textContent = kva.toFixed(2);
+    document.getElementById('t3-hp').textContent = hp.toFixed(2);
+  }
+</script>
+</body>
+</html>
