@@ -1140,3 +1140,41 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
   .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
   .nav-cta .btn-secondary { display: none; }
 }
+
+/* ── Scroll to top ──────────────────────────────────────────── */
+.scroll-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(37,99,235,.4);
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity .3s ease, transform .3s ease, background .2s ease;
+  z-index: 998;
+  pointer-events: none;
+}
+.scroll-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.scroll-top:hover {
+  background: var(--blue-dark);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-blue);
+}
+.scroll-top svg { width: 22px; height: 22px; }
+@media (max-width: 640px) {
+  .scroll-top { bottom: 20px; right: 20px; width: 42px; height: 42px; }
+  .scroll-top svg { width: 18px; height: 18px; }
+}
