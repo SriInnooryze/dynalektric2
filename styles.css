@@ -1089,6 +1089,43 @@ button { font-family: var(--font); cursor: pointer; border: none; background: no
 .animate-delay-3 { animation-delay: .3s; }
 .animate-delay-4 { animation-delay: .4s; }
 
+/* ── Unique section entrance animations ─────────────────────── */
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-55px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes slideInRight {
+  from { opacity: 0; transform: translateX(55px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.86) translateY(24px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+@keyframes zoomFade {
+  from { opacity: 0; transform: scale(0.94); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes flipInY {
+  from { opacity: 0; transform: perspective(800px) rotateY(-14deg) translateX(28px); }
+  to   { opacity: 1; transform: perspective(800px) rotateY(0) translateX(0); }
+}
+
+.anim-left.in  { animation: slideInLeft  .7s  cubic-bezier(.4,0,.2,1) forwards; }
+.anim-right.in { animation: slideInRight .7s  cubic-bezier(.4,0,.2,1) forwards; }
+.anim-scale.in { animation: scaleIn      .65s cubic-bezier(.4,0,.2,1) forwards; }
+.anim-zoom.in  { animation: zoomFade     .75s cubic-bezier(.4,0,.2,1) forwards; }
+.anim-flip.in  { animation: flipInY      .65s cubic-bezier(.4,0,.2,1) forwards; }
+
+/* ── Scroll snap (home page) ────────────────────────────────── */
+html:has(.snap-section) {
+  scroll-snap-type: y mandatory;
+}
+.snap-section {
+  scroll-snap-align: start;
+  scroll-margin-top: var(--nav-h);
+}
+
 /* ══════════════════════════════════════════════════════════════
    RESPONSIVE
 ══════════════════════════════════════════════════════════════ */
